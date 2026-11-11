@@ -1,7 +1,7 @@
 :root {
   font-family: 'Segoe UI', sans-serif;
-  color: #242a24;
-  background: #f7f7f2;
+  color: #f5f8ff;
+  background: #0b172b;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -9,11 +9,12 @@
   font-optical-sizing: auto;
   font-weight: 400;
 
-  --paper: #f7f7f2;
-  --ink: #242a24;
-  --muted: #73776f;
-  --green: #2f573f;
-  --line: #dedfd6;
+  --paper: #0b172b;
+  --ink: #f5f8ff;
+  --muted: #b1bfd2;
+  --navy: #244a78;
+  --line: #263b56;
+  --wash: #10213a;
   --serif: Georgia, 'Times New Roman', serif;
   --display: 'Manrope', 'Segoe UI', sans-serif;
 }
@@ -50,10 +51,10 @@ a {
 
 ::selection {
   color: #fff;
-  background: var(--green);
+  background: var(--navy);
 }
 
 :focus-visible {
-  outline: 2px solid #60866b;
+  outline: 2px solid #8bbcff;
   outline-offset: 4px;
 }

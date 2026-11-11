@@ -8,7 +8,9 @@ const projects = [
     description:
       'A carrier-focused order management microfrontend, with secure role-based workflows for offers, order tracking, and re-initiation.',
     tags: ['React', 'SSO / RBAC', 'i18n', 'REST APIs'],
-    className: 'project-card--green',
+    image: '/projects/carrier-portal.svg',
+    imageAlt: 'Carrier operations dashboard with order statuses and delivery metrics',
+    className: 'project-card--carrier',
   },
   {
     number: '02',
@@ -17,7 +19,9 @@ const projects = [
     description:
       'AI-assisted exam workflows with candidate learning tools, secure authentication, face verification, and live proctoring.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-    className: 'project-card--peach',
+    image: '/projects/nextestify.svg',
+    imageAlt: 'Online examination portal with a live proctoring preview',
+    className: 'project-card--nextestify',
   },
   {
     number: '03',
@@ -26,7 +30,9 @@ const projects = [
     description:
       'Built crew and admin portals from the ground up, and developed reusable Gantt chart and data-grid libraries.',
     tags: ['React', 'Redux', 'Jest', 'Storybook'],
-    className: 'project-card--blue',
+    image: '/projects/arms-aviation.svg',
+    imageAlt: 'Aviation operations screen with aircraft routes and a crew schedule',
+    className: 'project-card--arms',
   },
   {
     number: '04',
@@ -35,7 +41,9 @@ const projects = [
     description:
       'Helped migrate a .NET application to React and TypeScript, including file handling, testing, and deployment research.',
     tags: ['React', 'TypeScript', 'Express', 'Multer'],
-    className: 'project-card--yellow',
+    image: '/projects/power-fund.svg',
+    imageAlt: 'Investment dashboard with portfolio metrics and a performance chart',
+    className: 'project-card--power-fund',
   },
 ]
 
@@ -188,22 +196,14 @@ function App() {
                   <span>{project.client}</span>
                   <span className="project-number">{project.number}</span>
                 </div>
-                <div className="project-art" aria-hidden="true">
-                  <span className="art-window">
-                    <span className="art-window-bar">
-                      <i />
-                      <i />
-                      <i />
-                    </span>
-                    <span className="art-window-content">
-                      <i />
-                      <i />
-                      <i />
-                      <i />
-                    </span>
-                  </span>
-                  <span className="art-orbit">{project.number}</span>
-                </div>
+                <img
+                  className="project-image"
+                  src={project.image}
+                  alt={project.imageAlt}
+                  loading="lazy"
+                  width="1200"
+                  height="680"
+                />
                 <div className="project-copy">
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
